@@ -1,0 +1,495 @@
+[
+  {
+    "inputs": [],
+    "name": "GROUP_BLOCKS",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "HEADER_BYTES",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_INT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_SUBMIT_HEADERS",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_TARGET_TIMESPAN",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MIN_TARGET_TIMESPAN",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "Periods",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "nBits",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "currStartTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "prevEndTime",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TARGET_TIMESPAN",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UNROUNDED_MAX_TARGET",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "blockInfo",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "calcTarget",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initialHeight",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "medianHeight",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "medianIndex",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "newestTimeStub",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "startHeight",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "startIndex",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "submitter",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "timeStub",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32[14]",
+        "name": "_prevBlockEndTime",
+        "type": "uint32[14]"
+      },
+      {
+        "internalType": "uint256[12]",
+        "name": "_recentBlockInfo",
+        "type": "uint256[12]"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_initialHeight",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_medianIndex",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_medianHeight",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_startIndex",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_startHeight",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_newestTimeStub",
+        "type": "uint32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "nBits",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "currStartTime",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "prevEndTime",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct PeriodInfo[]",
+        "name": "_periods",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "height",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPeriodInfo",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "currStartTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "prevEndTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "nBits",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "target",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "latestTarget",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "info",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "h",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "t",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct BlockInfo",
+        "name": "median",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint32",
+        "name": "newestH",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "height",
+        "type": "uint256"
+      }
+    ],
+    "name": "adjustTarget",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "info",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "h",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "t",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct BlockInfo",
+        "name": "adjust",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "height",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "headers",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "submitHeaders",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "target",
+        "type": "uint256"
+      }
+    ],
+    "name": "truncatedTarget",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]
