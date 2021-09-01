@@ -14,5 +14,33 @@
       "oracleController": "0x381a5b89D0B48AB592d0e0C6e9CFaefcf0DF9e26"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/4404/synfutures-v1-kovan/v0.0.9"
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4404/synfutures-v1-kovan/v0.0.9",
+  "params": {
+    "margins": {
+      "USDC": "0x51D102A0203999110BC13B1ddf1c78566C02040A",
+      "USDT": "0x2568d37520C08Ecc772f5feb9705e7b8Ca248535",
+      "DAI": "0x815343B0FcA4f9b49c89118E66b21fBFCA51b3Eb",
+      "ETH": "0x0000000000000000000000000000000000000000"
+    },
+    "globalConfigParams": {
+      "emaTimeConstant": 600,
+      "poolFeeRatio": 25,
+      "poolReserveFeeRatio": 5,
+      "maxPriceSlippageRatio": 1000,
+      "maxInitialDailyBasis": 50,
+      "maxUserTradeOpenInterestRatio": 500,
+      "minAmmOpenInterestRatio": 500,
+      "maxSpotIndexChangePerSecondRatio": 10,
+      "initialMarginRatio": 1000,
+      "maintenanceMarginRatio": 500,
+      "bankruptcyLiquidatorRewardRatio": 100,
+      "insurancePremiumRatio": 200
+    },
+    "dexFactory": "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
+    "chainlinkFeeders": {
+      "BTC/USD": "0x6135b13325bfC4B00278B4abC5e20bbce2D6580e",
+      "BTC/ETH": "0xF7904a295A029a3aBDFFB6F12755974a958C7C25",
+      "XAU/USD": "0xc8fb5684f2707C82f28595dEaC017Bfdf44EE9c5"
+    }
+  }
 }

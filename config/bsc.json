@@ -8,5 +8,31 @@
       "reader": "0x4f6eeed538d289490a073ed4c7711ced20dad46e"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/872/bsc/v_1.1.202108191604"
+  "subgraphUrl": "https://api.studio.thegraph.com/query/872/bsc/v_1.1.202108191604",
+  "params": {
+    "margins": {
+      "BUSD": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+      "BNB": "0x0000000000000000000000000000000000000000"
+    },
+    "globalConfigParams": {
+      "emaTimeConstant": 600,
+      "poolFeeRatio": 25,
+      "poolReserveFeeRatio": 5,
+      "maxPriceSlippageRatio": 1000,
+      "maxInitialDailyBasis": 50,
+      "maxUserTradeOpenInterestRatio": 500,
+      "minAmmOpenInterestRatio": 500,
+      "maxSpotIndexChangePerSecondRatio": 10,
+      "initialMarginRatio": 1000,
+      "maintenanceMarginRatio": 500,
+      "bankruptcyLiquidatorRewardRatio": 100,
+      "insurancePremiumRatio": 200
+    },
+    "dexFactory": "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73",
+    "chainlinkFeeders": {
+      "BTC/USD":"0x264990fbd0A4796A3E3d8E37C4d5F87a3aCa5Ebf",
+      "BTC/BNB":"0x116EeB23384451C78ed366D4f67D5AD44eE771A0",
+      "XAU/USD":"0x86896fEB19D8A607c3b11f2aF50A0f239Bd71CD0"
+    }
+  }
 }

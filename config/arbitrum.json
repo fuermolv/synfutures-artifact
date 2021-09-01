@@ -8,5 +8,29 @@
       "reader": "0x138F7C8031D9e5f24e0883d17bD88D2EFa9a072D"
     }
   },
-  "subgraphUrl": ""
+  "subgraphUrl": "",
+  "params": {
+    "margins": {
+      "USDC": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+      "ETH": "0x0000000000000000000000000000000000000000"
+    },
+    "globalConfigParams": {
+      "emaTimeConstant": 600,
+      "poolFeeRatio": 25,
+      "poolReserveFeeRatio": 5,
+      "maxPriceSlippageRatio": 1000,
+      "maxInitialDailyBasis": 50,
+      "maxUserTradeOpenInterestRatio": 500,
+      "minAmmOpenInterestRatio": 500,
+      "maxSpotIndexChangePerSecondRatio": 10,
+      "initialMarginRatio": 1000,
+      "maintenanceMarginRatio": 500,
+      "bankruptcyLiquidatorRewardRatio": 100,
+      "insurancePremiumRatio": 200
+    },
+    "dexFactory": "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
+    "chainlinkFeeders": {
+      "BTC/USD": "0x6ce185860a4963106506C203335A2910413708e9"
+    }
+  }
 }

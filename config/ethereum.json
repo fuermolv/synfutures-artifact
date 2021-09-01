@@ -8,5 +8,33 @@
       "reader": "0x4f6eeed538d289490a073ed4c7711ced20dad46e"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/4404/synfutures-v1-mainnet/v0.0.1"
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4404/synfutures-v1-mainnet/v0.0.1",
+  "params": {
+    "margins": {
+      "USDC": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "USDT": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "DAI": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "ETH": "0x0000000000000000000000000000000000000000"
+    },
+    "globalConfigParams": {
+      "emaTimeConstant": 600,
+      "poolFeeRatio": 25,
+      "poolReserveFeeRatio": 5,
+      "maxPriceSlippageRatio": 1000,
+      "maxInitialDailyBasis": 50,
+      "maxUserTradeOpenInterestRatio": 500,
+      "minAmmOpenInterestRatio": 500,
+      "maxSpotIndexChangePerSecondRatio": 10,
+      "initialMarginRatio": 1000,
+      "maintenanceMarginRatio": 500,
+      "bankruptcyLiquidatorRewardRatio": 100,
+      "insurancePremiumRatio": 200
+    },
+    "dexFactory": "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
+    "chainlinkFeeders": {
+      "BTC/USD": "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c",
+      "BTC/ETH": "0xdeb288F737066589598e9214E782fa5A8eD689e8",
+      "XAU/USD": "0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6"
+    }
+  }
 }
