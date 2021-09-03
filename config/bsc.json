@@ -1,5 +1,14 @@
 {
   "chainId": 56,
+  "chainName": "Binance Smart Chain Mainnet",
+  "nativeCurrency": {
+    "name": "Binance Coin",
+    "symbol": "BNB",
+    "decimals": 18
+  },
+  "rpcUrl": "https://bsc-dataseed.binance.org",
+  "blockExplorerUrl": "https://bscscan.com",
+  "blockTime": 3000,  
   "contractAddress": {
     "Basic": {
       "globalConfig": "0x928e85ec6a7f6dc4aa8211428e9e49e89e1b8f04",
@@ -8,7 +17,7 @@
       "reader": "0x4f6eeed538d289490a073ed4c7711ced20dad46e"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/872/bsc/v_1.1.202108191604",
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/bsc/v_1.1.202109021156",
   "params": {
     "margins": {
       "BUSD": "0xe9e7cea3dedca5984780bafc599bd69add087d56",

@@ -1,5 +1,14 @@
 {
   "chainId": 42,
+  "chainName": "Ethereum Testnet Kovan",
+  "nativeCurrency": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "rpcUrl": "https://kovan.infura.io/v3",
+  "blockExplorerUrl": "https://etherscan.com",
+  "blockTime": 4000,  
   "contractAddress": {
     "Basic": {
       "globalConfig": "0x928e85ec6a7f6dc4aa8211428e9e49e89e1b8f04",
@@ -14,7 +23,7 @@
       "oracleController": "0x381a5b89D0B48AB592d0e0C6e9CFaefcf0DF9e26"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/4404/synfutures-v1-kovan/v0.0.9",
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/kovan/v_1.1.202108311528",
   "params": {
     "margins": {
       "USDC": "0x51D102A0203999110BC13B1ddf1c78566C02040A",
