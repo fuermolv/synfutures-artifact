@@ -12,14 +12,14 @@ import * as bscAsset from './asset/bsc.json';
 import * as arbitrumAsset from './asset/arbitrum.json';
 
 
-import ERC20_ABI from './abi/basic/ERC20.json';
-import GLOBAL_CONFIG_ABI from './abi/basic/GlobalConfig.json';
-import AMM_ABI from './abi/basic/Amm.json';
-import FACTORY_ABI from './abi/basic/Factory.json';
-import READER_ABI from './abi/basic/Reader.json';
-import FUTURES_ABI from './abi/basic/Futures.json';
-import KOVAN_ERC20_ABI from './abi/basic/Kovan_ERC20.json';
-
+import ERC20_ABI from './abi/ERC20.json';
+import GLOBAL_CONFIG_ABI from './abi/GlobalConfig.json';
+import AMM_ABI from './abi/Amm.json';
+import FACTORY_ABI from './abi/Factory.json';
+import READER_ABI from './abi/Reader.json';
+import FUTURES_ABI from './abi/Futures.json';
+import KOVAN_ERC20_ABI from './abi/Kovan_ERC20.json';
+import BTCHASH_ORACLE_ABI from './abi/oracle/bitcoin-mining-tracker.json';
 
 export {
     ethereumConfig,
@@ -40,6 +40,6 @@ export {
     FACTORY_ABI, 
     READER_ABI, 
     FUTURES_ABI, 
-    KOVAN_ERC20_ABI    
-
+    KOVAN_ERC20_ABI,
+    BTCHASH_ORACLE_ABI
   };
