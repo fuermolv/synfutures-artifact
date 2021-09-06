@@ -1,0 +1,54 @@
+{
+  "name": "@synfutures/synfutures-artifact",
+  "version": "0.0.1",
+  "description": "Network config for our SynFutures app.",
+  "author": "SynFutures",
+  "main": "build/src/main.js",
+  "types": "build/src/main.d.ts",
+  "engines": {
+    "node": ">= 14"
+  },
+  "devDependencies": {
+    "@types/jest": "~26.0.23",
+    "@types/node": "~14.14.45",
+    "@typescript-eslint/eslint-plugin": "~4.28.2",
+    "@typescript-eslint/parser": "~4.28.2",
+    "eslint": "~7.30.0",
+    "eslint-config-prettier": "~8.3.0",
+    "eslint-plugin-jest": "~24.3.6",
+    "jest": "~27.0.6",
+    "prettier": "~2.3.2",
+    "rimraf": "~3.0.2",
+    "ts-jest": "~27.0.3",
+    "tscpaths": "^0.0.9",
+    "tsutils": "~3.21.0",
+    "typescript": "~4.3.5"
+  },
+  "scripts": {
+    "start": "node build/src/main.js",
+    "clean": "rimraf coverage build tmp",
+    "prebuild": "npm run lint&&rimraf build",
+    "build": "tsc -p tsconfig.release.json",
+    "prepare": "npm run build",
+    "build:watch": "tsc -w -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "prepack": "npm run prepare"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "tslib": "~2.3.0"
+  },
+  "volta": {
+    "node": "14.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SynFutures/synfutures-artifact.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SynFutures/synfutures-artifact/issues"
+  },
+  "homepage": "https://github.com/SynFutures/synfutures-artifact#readme"
+}
