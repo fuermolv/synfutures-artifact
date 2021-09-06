@@ -44,10 +44,10 @@
     "products":["BASIC"]
   },
   "pairs":{
-    "PANCAKEV2": {
-      "name": "Pancake V2",
-      "baseTokens":["WETH", "MATIC"],
-      "quoteTokens":["USDC", "USDT", "DAI", "WETH"]
+    "CHAINLINK": {
+      "name": "Chainlink",
+      "baseTokens":["CHAINLINK-BTC"],
+      "quoteTokens":["USDC"]
     }
   }
 }
