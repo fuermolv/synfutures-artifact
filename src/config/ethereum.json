@@ -44,6 +44,20 @@
       "BTC/USD": "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c",
       "BTC/ETH": "0xdeb288F737066589598e9214E782fa5A8eD689e8",
       "XAU/USD": "0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6"
+    },
+    "products":["BASIC"]
+  },
+  "pairs":{
+    "CHAINLINK": {
+      "name": "Chainlink",
+      "baseTokens":["CHAINLINK-BTC", "CHAINLINK-XAU"],
+      "quoteTokens":["USDC"]
+    },
+    "UNISWAPV2": {
+      "symbol": "UNIV2",
+      "name": "Uniswap V2",
+      "baseTokens":["ETH", "MATIC"],
+      "quoteTokens":["USDC", "USDT", "DAI", "ETH"]
     }
   }
 }

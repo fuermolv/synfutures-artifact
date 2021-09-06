@@ -42,6 +42,14 @@
       "BTC/USD":"0x264990fbd0A4796A3E3d8E37C4d5F87a3aCa5Ebf",
       "BTC/BNB":"0x116EeB23384451C78ed366D4f67D5AD44eE771A0",
       "XAU/USD":"0x86896fEB19D8A607c3b11f2aF50A0f239Bd71CD0"
+    },
+    "products":["BASIC"]
+  },
+  "pairs":{
+    "PANCAKEV2": {
+      "name": "Pancake V2",
+      "baseTokens":["BNB"],
+      "quoteTokens":["BUSD"]
     }
   }
 }

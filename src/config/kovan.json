@@ -50,6 +50,21 @@
       "BTC/USD": "0x6135b13325bfC4B00278B4abC5e20bbce2D6580e",
       "BTC/ETH": "0xF7904a295A029a3aBDFFB6F12755974a958C7C25",
       "XAU/USD": "0xc8fb5684f2707C82f28595dEaC017Bfdf44EE9c5"
+    },
+    "products":["BTCHASHRATE", "BASIC"]
+  },
+  "pairs":{
+    "SYNFUTURES": {
+      "baseTokens":["BTCHASH"],
+      "quoteTokens":["WBTC"]
+    },
+    "CHAINLINK": {
+      "baseTokens":["CHAINLINK-BTC", "CHAINLINK_XAU"],
+      "quoteTokens":["USDC"]
+    },
+    "UNISWAPV2": {
+      "baseTokens":["ETH", "LINK", "UNI", "AAVE", "COMP"],
+      "quoteTokens":["USDC", "USDT", "ETH", "DAI"]
     }
   }
 }
