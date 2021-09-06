@@ -1,6 +1,6 @@
 {
   "name": "@synfutures/synfutures-artifact",
-  "version": "0.0.1",
+  "version": "0.0.1.dev",
   "description": "Network config for our SynFutures app.",
   "author": "SynFutures",
   "main": "build/src/main.js",
