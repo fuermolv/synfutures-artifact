@@ -55,11 +55,11 @@
   },
   "pairs":{
     "SYNFUTURES": {
-      "baseTokens":["BTCHASH"],
+      "baseTokens":["SYNFUTURES-BTCHASH"],
       "quoteTokens":["WBTC"]
     },
     "CHAINLINK": {
-      "baseTokens":["CHAINLINK-BTC", "CHAINLINK_XAU"],
+      "baseTokens":["CHAINLINK-BTC", "CHAINLINK-XAU"],
       "quoteTokens":["USDC"]
     },
     "UNISWAPV2": {

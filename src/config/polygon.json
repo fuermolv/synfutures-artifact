@@ -54,11 +54,10 @@
   "pairs":{
     "SYNFUTURES": {
       "name": "SynFutures",
-      "baseTokens":["BTCHASH"],
+      "baseTokens":["SYNFUTURES-BTCHASH"],
       "quoteTokens":["WBTC"]
     },
     "CHAINLINK": {
-      "symbol": "symbol",
       "name": "Chainlink",
       "baseTokens":["CHAINLINK-BTC"],
       "quoteTokens":["USDC"]

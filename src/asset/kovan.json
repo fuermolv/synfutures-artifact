@@ -45,21 +45,21 @@
   {
     "name": "BTCHASH",
     "address": "0x0000000000000000000000000000000000000000",
-    "symbol": "BTCHASH",
+    "symbol": "SYNFUTURES-BTCHASH",
     "decimals": 8,
     "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_mining.svg"
   },
   {
     "name": "(BTC) Bitcion",
     "address": "0x0000000000000000000000000000000000000000",
-    "symbol": "CHAINLINK_BTC",
+    "symbol": "CHAINLINK-BTC",
     "decimals": 8,
     "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_btc.svg"
   },
   {
     "name": "XAU",
     "address": "0x0000000000000000000000000000000000000000",
-    "symbol": "CHAINLINK_XAU",
+    "symbol": "CHAINLINK-XAU",
     "decimals": 8,
     "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_xau.svg"
   }
