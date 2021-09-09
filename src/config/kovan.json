@@ -7,6 +7,7 @@
     "decimals": 18
   },
   "rpcUrl": "https://kovan.infura.io/v3",
+  "infuraUrl": "https://kovan.infura.io/v3/%s",
   "blockExplorerUrl": "https://etherscan.com",
   "blockTime": 4000,  
   "contractAddress": {

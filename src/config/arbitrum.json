@@ -7,6 +7,7 @@
     "decimals": 18
   },
   "rpcUrl": "https://arb1.arbitrum.io/rpc",
+  "infuraUrl": "https://arbitrum-mainnet.infura.io/v3/%s",
   "blockExplorerUrl": "https://arbiscan.io/",
   "blockTime": 3000,  
   "contractAddress": {
