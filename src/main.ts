@@ -20,6 +20,10 @@ import  * as READER_ABI from './abi/Reader.json';
 import  * as FUTURES_ABI from './abi/Futures.json';
 import  * as KOVAN_ERC20_ABI from './abi/Kovan_ERC20.json';
 import  * as BTCHASH_ORACLE_ABI from './abi/oracle/bitcoin-mining-tracker.json';
+import { ChainConfig } from './types/chainConfig';
+import { CHAIN_ID } from './constants';
+import { Token } from './types/token';
+import util from 'util';
 
 export {
     ethereumConfig,
@@ -43,3 +47,119 @@ export {
     KOVAN_ERC20_ABI,
     BTCHASH_ORACLE_ABI
   };
+/**
+ * get chain id by name
+ * @param chain string
+ * @returns 
+ */
+export function getChainId(chain: string): CHAIN_ID {
+  return CHAIN_ID[chain.toUpperCase()]
+}
+
+/**
+ * get chain config by chain id
+ * @param chainId 
+ * @returns 
+ */
+export function getChainConfig(chainId: CHAIN_ID): ChainConfig {
+  switch (chainId) {
+    case CHAIN_ID.ETHEREUM: {
+      const config: ChainConfig = ethereumConfig;
+      return config
+    }
+    case CHAIN_ID.BSC: {
+      const config: ChainConfig = bscConfig;
+      return config
+    }
+    case CHAIN_ID.POLYGON: {
+      const config: ChainConfig = polygonConfig;
+      return config
+    }
+    case CHAIN_ID.ARBITURM: {
+      const config: ChainConfig = arbitrumConfig;
+      return config
+    }
+    case CHAIN_ID.KOVAN: {
+      const config: ChainConfig = kovanConfig;
+      return config
+    }
+    default: { 
+      throw new Error('Unsupported Network.')
+   }
+  }
+}
+
+/**
+ * get available assets on a specific chain
+ * @param chainId 
+ * @returns 
+ */
+export function getAssets(chainId: CHAIN_ID): Token[] {
+  switch (chainId) {
+    case CHAIN_ID.ETHEREUM: {
+      const config: Token[] = ethereumAsset;
+      return config
+    }
+    case CHAIN_ID.BSC: {
+      const config: Token[] = bscAsset;
+      return config
+    }
+    case CHAIN_ID.POLYGON: {
+      const config: Token[] = polygonAsset;
+      return config
+    }
+    case CHAIN_ID.ARBITURM: {
+      const config: Token[] = arbitrumAsset;
+      return config
+    }
+    case CHAIN_ID.KOVAN: {
+      const config: Token[] = kovanAsset;
+      return config
+    }
+    default: { 
+      throw new Error('Unsupported Network.')
+   }
+  }
+}
+
+/**
+ * get token info by symbol and network
+ * @param chainId 
+ * @param symbol 
+ * @returns 
+ */
+export function getToken(chainId: CHAIN_ID, symbol: string): Token {
+  const assets = getAssets(chainId)
+  for (const token of assets) {
+      if (token.symbol.toUpperCase() === symbol.toUpperCase()) {
+          return token
+      }
+  }
+}
+
+/**
+ * get token info by address and network
+ * @param chainId 
+ * @param address 
+ * @returns 
+ */
+export function getTokenByAddress(chainId: CHAIN_ID, address: string): Token {
+  const assets = getAssets(chainId)
+  for (const token of assets) {
+      if (token.address.toUpperCase() === address.toUpperCase()) {
+          return token
+      }
+  }
+}
+
+/**
+ * get infura rpc url
+ * @param chainId 
+ * @param infuraKey 
+ * @returns 
+ */
+export function getInfuraUrl(chainId: CHAIN_ID, infuraKey: string): string {
+  let url = getChainConfig(chainId).infuraUrl
+  url = util.format(url, infuraKey)
+  return url.split(' ')[0]
+}
