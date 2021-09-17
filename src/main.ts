@@ -18,7 +18,7 @@ import * as READER_ABI from './abi/Reader.json';
 import * as FUTURES_ABI from './abi/Futures.json';
 import * as KOVAN_ERC20_ABI from './abi/Kovan_ERC20.json';
 import * as BTCHASH_ORACLE_ABI from './abi/oracle/bitcoin-mining-tracker.json';
-import { ChainConfig, PairConfigInfo } from './types/chainConfig';
+import { ChainConfig, PairConfig, PairConfigInfo } from './types/chainConfig';
 import { CHAIN_ID, PRODUCT_TYPE } from './constants';
 import { Token } from './types/token';
 import util from 'util';
@@ -105,7 +105,7 @@ function mapChainConfig(chainId: CHAIN_ID, jsonConfig) {
   return config;
 }
 
-function mapPairConfig(chainId: CHAIN_ID, pairConfig) {
+function mapPairConfig(chainId: CHAIN_ID, pairConfig): PairConfig {
   const result = {};
   for (const key of Object.keys(pairConfig)) {
     result[key] = mapPairConfigInfo(chainId, pairConfig[key]);
@@ -119,7 +119,7 @@ function mapPairConfig(chainId: CHAIN_ID, pairConfig) {
  * @param config
  * @returns
  */
-function mapPairConfigInfo(chainId: CHAIN_ID, config) {
+function mapPairConfigInfo(chainId: CHAIN_ID, config): PairConfigInfo {
   const pairConfig: PairConfigInfo = {
     name: config.name,
     baseTokens: config.baseTokens.map((symbol) => getToken(chainId, symbol)),
@@ -168,7 +168,7 @@ export function getAssets(chainId: CHAIN_ID): Token[] {
  * @param symbol
  * @returns
  */
-export function getToken(chainId: CHAIN_ID, symbol: string): Token {
+export function getToken(chainId: CHAIN_ID, symbol: string): Token | undefined {
   const assets = getAssets(chainId);
   for (const token of assets) {
     if (token.symbol.toUpperCase() === symbol.toUpperCase()) {
@@ -184,7 +184,7 @@ export function getToken(chainId: CHAIN_ID, symbol: string): Token {
  * @param address
  * @returns
  */
-export function getTokenByAddress(chainId: CHAIN_ID, address: string): Token {
+export function getTokenByAddress(chainId: CHAIN_ID, address: string): Token | undefined {
   const assets = getAssets(chainId);
   for (const token of assets) {
     if (token.address.toUpperCase() === address.toUpperCase()) {
