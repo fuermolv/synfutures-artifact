@@ -1,11 +1,7 @@
 {
   "chainId": 137,
   "chainName": "Polygon Mainnet",
-  "nativeCurrency": {
-    "name": "Matic",
-    "symbol": "MATIC",
-    "decimals": 18
-  },
+  "nativeToken": "MATIC",
   "rpcUrl": "https://rpc-mainnet.maticvigil.com",
   "infuraUrl": "https://polygon-mainnet.infura.io/v3/%s",
   "blockExplorerUrl": "https://polygonscan.com",
@@ -24,15 +20,15 @@
       "oracleController": "0x381a5b89D0B48AB592d0e0C6e9CFaefcf0DF9e26"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/polygon/v_1.1.202108281540",
-  "params": {
-    "margins": {
-      "USDC": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-      "USDT": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
-      "DAI": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-      "WETH": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
-    },
-    "globalConfigParams": {
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/polygon/v_1.1.202109171109",
+  "chainParams": {
+    "margins": [
+      "USDC",
+      "USDT",
+      "DAI",
+      "WETH"
+    ],
+    "globalConfig": {
       "emaTimeConstant": 600,
       "poolFeeRatio": 25,
       "poolReserveFeeRatio": 5,
@@ -52,7 +48,7 @@
     },
     "products":["BTCHASHRATE", "BASIC"]
   },
-  "pairs":{
+  "pairConfig":{
     "SYNFUTURES": {
       "name": "SynFutures",
       "baseTokens":["SYNFUTURES-BTCHASH"],
