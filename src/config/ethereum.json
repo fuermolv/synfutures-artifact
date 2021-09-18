@@ -68,8 +68,12 @@
                 "USDT",
                 "DAI",
                 "ETH"
-            ],
-            "default":true
+            ]
         }
+    },
+    "defaultPair": {
+        "oracleType": "UNISWAPV2",
+        "base": "ETH",
+        "quote": "USDC"
     }
 }

@@ -48,5 +48,10 @@
       "baseTokens":["BNB"],
       "quoteTokens":["BUSD"]
     }
+  },
+  "defaultPair": {
+    "oracleType": "PANCAKEV2",
+    "base": "BNB",
+    "quote": "BUSD"
   }
 }

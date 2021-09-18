@@ -17,7 +17,8 @@
       "factory": "0x24de4E74Dec1200577838081EE4C0665911ae4Ee",
       "reader": "0x50536aF84576dC938d3bf025c8AC6A6EbF0180bE",
       "globalConfig": "0xa74eB4CeC710573A180a1105e3c55B608219B375",
-      "oracleController": "0x381a5b89D0B48AB592d0e0C6e9CFaefcf0DF9e26"
+      "oracleController": "0x381a5b89D0B48AB592d0e0C6e9CFaefcf0DF9e26",
+      "bitcoinMiningTracker": "0x4d5a81eb9eaa62b27bf2dec70713bfc50f20cfc0"
     }
   },
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/kovan/v_1.1.202108311528",
@@ -63,5 +64,10 @@
       "baseTokens":["ETH", "LINK", "UNI", "AAVE", "COMP"],
       "quoteTokens":["USDC", "USDT", "ETH", "DAI"]
     }
+  },
+  "defaultPair": {
+    "oracleType": "UNISWAPV2",
+    "base": "ETH",
+    "quote": "USDC"
   }
 }
