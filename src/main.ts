@@ -96,7 +96,7 @@ function mapChainConfig(chainId: CHAIN_ID, jsonConfig) {
     chainId: chainId,
     nativeToken: getToken(chainId, jsonConfig.nativeToken),
     chainParams: {
-      margins: jsonConfig.chainParams.margins.map((symbol) => getToken(chainId, symbol)),
+      marginConfig: jsonConfig.chainParams.marginConfig,
       dexFactory: jsonConfig.chainParams.dexFactory,
       globalConfig: jsonConfig.chainParams.globalConfig,
       chainlinkFeeders: jsonConfig.chainParams.chainlinkFeeders,
@@ -213,5 +213,6 @@ export function getInfuraUrl(chainId: CHAIN_ID, infuraKey: string): string {
   return url.split(' ')[0];
 }
 
-// const conf = getChainConfig(CHAIN_ID.KOVAN);
+// const conf = getChainConfig(CHAIN_ID.POLYGON);
 // console.info(JSON.stringify(conf.contractAddress.BtcHashRate.bitcoinMiningTracker));
+// console.info(conf.chainParams.marginConfig.USDT);

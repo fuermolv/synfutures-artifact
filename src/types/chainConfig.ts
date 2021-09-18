@@ -31,11 +31,16 @@ export interface PairConfig {
 }
 
 export interface ChainParams {
-  margins: Token[];
+  marginConfig: { [key: string]: MarginConfig };
   globalConfig: GlobalConfig;
   dexFactory: string;
   chainlinkFeeders: { [key: string]: string };
   products: PRODUCT_TYPE[];
+}
+
+export interface MarginConfig {
+  allowed: boolean;
+  alignToFriday: boolean;
 }
 
 export interface GlobalConfig {
