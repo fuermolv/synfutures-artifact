@@ -18,8 +18,8 @@ import * as READER_ABI from './abi/Reader.json';
 import * as FUTURES_ABI from './abi/Futures.json';
 import * as KOVAN_ERC20_ABI from './abi/Kovan_ERC20.json';
 import * as BTCHASH_ORACLE_ABI from './abi/oracle/bitcoin-mining-tracker.json';
-import { ChainConfig, PairConfig, PairConfigInfo } from './types/chainConfig';
-import { CHAIN_ID, PRODUCT_TYPE } from './constants';
+import { ChainConfig, PairConfig } from './types/chainConfig';
+import { CHAIN_ID, ORACLE_TYPE, PRODUCT_TYPE } from './constants';
 import { Token } from './types/token';
 import util from 'util';
 
@@ -43,6 +43,9 @@ export {
   KOVAN_ERC20_ABI,
   BTCHASH_ORACLE_ABI,
 };
+
+export * from './types';
+export * from './constants';
 
 /**
  * get chain id by name
@@ -101,11 +104,16 @@ function mapChainConfig(chainId: CHAIN_ID, jsonConfig) {
     },
     pairConfig: mapPairConfig(chainId, jsonConfig.pairConfig),
     contractAddress: jsonConfig.contractAddress,
+    defaultPair: {
+      oracleType: ORACLE_TYPE[jsonConfig.defaultPair.oracleType],
+      base: getToken(chainId, jsonConfig.defaultPair.base),
+      quote: getToken(chainId, jsonConfig.defaultPair.quote),
+    },
   };
   return config;
 }
 
-function mapPairConfig(chainId: CHAIN_ID, pairConfig): PairConfig {
+function mapPairConfig(chainId: CHAIN_ID, pairConfig): { [key in ORACLE_TYPE]?: PairConfig } {
   const result = {};
   for (const key of Object.keys(pairConfig)) {
     result[key] = mapPairConfigInfo(chainId, pairConfig[key]);
@@ -119,12 +127,11 @@ function mapPairConfig(chainId: CHAIN_ID, pairConfig): PairConfig {
  * @param config
  * @returns
  */
-function mapPairConfigInfo(chainId: CHAIN_ID, config): PairConfigInfo {
-  const pairConfig: PairConfigInfo = {
+function mapPairConfigInfo(chainId: CHAIN_ID, config): PairConfig {
+  const pairConfig: PairConfig = {
     name: config.name,
     baseTokens: config.baseTokens.map((symbol) => getToken(chainId, symbol)),
     quoteTokens: config.quoteTokens.map((symbol) => getToken(chainId, symbol)),
-    default: config.default,
   };
   return pairConfig;
 }
@@ -207,5 +214,4 @@ export function getInfuraUrl(chainId: CHAIN_ID, infuraKey: string): string {
 }
 
 // const conf = getChainConfig(CHAIN_ID.KOVAN);
-// console.info(PRODUCT_TYPE['Basic'.toUpperCase()]);
-// console.info(JSON.stringify(conf));
+// console.info(JSON.stringify(conf.contractAddress.BtcHashRate.bitcoinMiningTracker));

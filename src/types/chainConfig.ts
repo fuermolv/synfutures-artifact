@@ -11,42 +11,31 @@ export interface ChainConfig {
   blockTime: number;
   subgraphUrl: string;
   chainParams: ChainParams;
-  pairConfig: PairConfig;
-  contractAddress: ContractAddressConfig;
+  pairConfig: { [key in ORACLE_TYPE]?: PairConfig };
+  contractAddress: { [key in PRODUCT_TYPE]?: ContractAddress };
+  defaultPair: DefaultPair;
 }
-
-export type ContractAddressConfig = {
-  [key in PRODUCT_TYPE]?: ContractAddress;
-};
 
 export interface ContractAddress {
   globalConfig: string;
   oracleController: string;
   factory: string;
   reader: string;
+  bitcoinMiningTracker?: string;
 }
 
-export type PairConfig = {
-  [key in ORACLE_TYPE]?: PairConfigInfo;
-};
-
-export interface PairConfigInfo {
+export interface PairConfig {
   name: string;
   baseTokens: Token[];
   quoteTokens: Token[];
-  default?: boolean;
 }
 
 export interface ChainParams {
   margins: Token[];
   globalConfig: GlobalConfig;
   dexFactory: string;
-  chainlinkFeeders: ChainlinkFeeder;
+  chainlinkFeeders: { [key: string]: string };
   products: PRODUCT_TYPE[];
-}
-
-export interface ChainlinkFeeder {
-  [key: string]: string;
 }
 
 export interface GlobalConfig {
@@ -62,4 +51,10 @@ export interface GlobalConfig {
   maintenanceMarginRatio: number;
   bankruptcyLiquidatorRewardRatio: number;
   insurancePremiumRatio: number;
+}
+
+export interface DefaultPair {
+  oracleType: ORACLE_TYPE;
+  base: Token;
+  quote: Token;
 }
