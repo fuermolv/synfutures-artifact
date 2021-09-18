@@ -1,5 +1,13 @@
 [
     {
+        "name":"Arbitrum Ether",
+        "address":"0x0000000000000000000000000000000000000000",
+        "symbol":"AETH",
+        "decimals":18,
+        "native": true,        
+        "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+    },
+    {
         "name":"Wrapped Ether",
         "address":"0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
         "symbol":"WETH",

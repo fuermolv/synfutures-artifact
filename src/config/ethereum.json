@@ -1,64 +1,79 @@
 {
-  "chainId": 1,
-  "chainName": "Ethereum Mainnet",
-  "nativeCurrency": {
-    "name": "Ethereum",
-    "symbol": "ETH",
-    "decimals": 18
-  },
-  "rpcUrl": "https://mainnet.infura.io/v3",
-  "infuraUrl": "https://mainnet.infura.io/v3/%s",  
-  "blockExplorerUrl": "https://etherscan.com",
-  "blockTime": 10000,  
-  "contractAddress": {
-    "Basic": {
-      "globalConfig": "0x928e85ec6a7f6dc4aa8211428e9e49e89e1b8f04",
-      "oracleController": "0xf81ee8cdd0a1aa168d68d6371afd32436c42a493",
-      "factory": "0x6e893ddfa75d67febb853e00f81c913c151bf9a9",
-      "reader": "0x4f6eeed538d289490a073ed4c7711ced20dad46e"
+    "chainId":1,
+    "chainName":"Ethereum Mainnet",
+    "nativeToken":"ETH",
+    "rpcUrl":"https://mainnet.infura.io/v3",
+    "infuraUrl":"https://mainnet.infura.io/v3/%s",
+    "blockExplorerUrl":"https://etherscan.com",
+    "blockTime":10000,
+    "contractAddress":{
+        "Basic":{
+            "globalConfig":"0x928e85ec6a7f6dc4aa8211428e9e49e89e1b8f04",
+            "oracleController":"0xf81ee8cdd0a1aa168d68d6371afd32436c42a493",
+            "factory":"0x6e893ddfa75d67febb853e00f81c913c151bf9a9",
+            "reader":"0x4f6eeed538d289490a073ed4c7711ced20dad46e"
+        }
+    },
+    "subgraphUrl":"https://api.studio.thegraph.com/query/4400/mainnet/v_1.1.202109021152",
+    "chainParams":{
+        "margins":[
+            "USDC",
+            "USDT",
+            "DAI",
+            "ETH"
+        ],
+        "globalConfig":{
+            "emaTimeConstant":600,
+            "poolFeeRatio":25,
+            "poolReserveFeeRatio":5,
+            "maxPriceSlippageRatio":1000,
+            "maxInitialDailyBasis":50,
+            "maxUserTradeOpenInterestRatio":500,
+            "minAmmOpenInterestRatio":500,
+            "maxSpotIndexChangePerSecondRatio":10,
+            "initialMarginRatio":1000,
+            "maintenanceMarginRatio":500,
+            "bankruptcyLiquidatorRewardRatio":100,
+            "insurancePremiumRatio":200
+        },
+        "dexFactory":"0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
+        "chainlinkFeeders":{
+            "BTC/USD":"0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c",
+            "BTC/ETH":"0xdeb288F737066589598e9214E782fa5A8eD689e8",
+            "XAU/USD":"0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6"
+        },
+        "products":[
+            "BASIC"
+        ]
+    },
+    "pairConfig":{
+        "CHAINLINK":{
+            "name":"Chainlink",
+            "baseTokens":[
+                "CHAINLINK-BTC",
+                "CHAINLINK-XAU"
+            ],
+            "quoteTokens":[
+                "USDC"
+            ]
+        },
+        "UNISWAPV2":{
+            "name":"Uniswap V2",
+            "baseTokens":[
+                "ETH",
+                "MATIC"
+            ],
+            "quoteTokens":[
+                "USDC",
+                "USDT",
+                "DAI",
+                "ETH"
+            ]
+        }
+    },
+    "defaultPair": {
+        "oracleType": "UNISWAPV2",
+        "base": "ETH",
+        "quote": "USDC"
     }
-  },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/mainnet/v_1.1.202109021152",
-  "params": {
-    "margins": {
-      "USDC": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-      "USDT": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-      "DAI": "0x6b175474e89094c44da98b954eedeac495271d0f",
-      "ETH": "0x0000000000000000000000000000000000000000"
-    },
-    "globalConfigParams": {
-      "emaTimeConstant": 600,
-      "poolFeeRatio": 25,
-      "poolReserveFeeRatio": 5,
-      "maxPriceSlippageRatio": 1000,
-      "maxInitialDailyBasis": 50,
-      "maxUserTradeOpenInterestRatio": 500,
-      "minAmmOpenInterestRatio": 500,
-      "maxSpotIndexChangePerSecondRatio": 10,
-      "initialMarginRatio": 1000,
-      "maintenanceMarginRatio": 500,
-      "bankruptcyLiquidatorRewardRatio": 100,
-      "insurancePremiumRatio": 200
-    },
-    "dexFactory": "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
-    "chainlinkFeeders": {
-      "BTC/USD": "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c",
-      "BTC/ETH": "0xdeb288F737066589598e9214E782fa5A8eD689e8",
-      "XAU/USD": "0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6"
-    },
-    "products":["BASIC"]
-  },
-  "pairs":{
-    "CHAINLINK": {
-      "name": "Chainlink",
-      "baseTokens":["CHAINLINK-BTC", "CHAINLINK-XAU"],
-      "quoteTokens":["USDC"]
-    },
-    "UNISWAPV2": {
-      "symbol": "UNIV2",
-      "name": "Uniswap V2",
-      "baseTokens":["ETH", "MATIC"],
-      "quoteTokens":["USDC", "USDT", "DAI", "ETH"]
-    }
-  }
 }

@@ -2,7 +2,7 @@
   {
     "name": "Ether",
     "address": "0x0000000000000000000000000000000000000000",
-    "symbol": "Ethereum",
+    "symbol": "ETH",
     "decimals": 18,
     "native": true,
     "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_eth.svg"
