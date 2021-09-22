@@ -1,0 +1,32 @@
+{
+    "UNISWAPV2":{
+        "name":"Uniswap V2",
+        "symbol":"UNIV2",
+        "oracleType": "UNISWAPV2",
+        "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_uniswap.svg"
+    },
+    "CHAINLINK":{
+        "name":"Chainlink",
+        "symbol":"LINK",
+        "oracleType": "CHAINLINK",
+        "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_chainlink.svg"
+    },
+    "SUSHI":{
+        "name":"SushiSwap",
+        "symbol":"SUSHI",
+        "oracleType": "SUSHI",
+        "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_sushi.svg"
+    },
+    "PANCAKEV2":{
+        "name":"PancakeSwap",
+        "symbol":"CAKEV2",
+        "oracleType": "PANCAKEV2",
+        "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_cake.svg"
+    },
+    "SYNFUTURES":{
+        "name":"SynFutures",
+        "symbol":"SFT",
+        "oracleType": "SYNFUTURES",
+        "logoURI": "https://raw.githubusercontent.com/SynFutures/logo/main/logo-svg/SYN-CUBE.svg"
+    }
+}
