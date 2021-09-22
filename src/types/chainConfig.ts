@@ -24,8 +24,14 @@ export interface ContractAddress {
   bitcoinMiningTracker?: string;
 }
 
-export interface PairConfig {
+export interface OracleConfig {
   name: string;
+  symbol: string;
+  oracleType: ORACLE_TYPE;
+  logoURI: string;
+}
+
+export interface PairConfig extends OracleConfig {
   baseTokens: Token[];
   quoteTokens: Token[];
 }

@@ -1,19 +1,8 @@
-import * as ethereumConfig from '../config/ethereum.json';
-import * as kovanConfig from '../config/kovan.json';
-import * as polygonConfig from '../config/polygon.json';
-import * as bscConfig from '../config/bsc.json';
-import * as arbitrumConfig from '../config/arbitrum.json';
-
-import * as ethereumAsset from '../asset/ethereum.json';
-import * as kovanAsset from '../asset/kovan.json';
-import * as polygonAsset from '../asset/polygon.json';
-import * as bscAsset from '../asset/bsc.json';
-import * as arbitrumAsset from '../asset/arbitrum.json';
-
-import { ChainConfig, PairConfig } from '../types/chainConfig';
-import { CHAIN_ID, ORACLE_TYPE, PRODUCT_TYPE } from '../constants';
-import { Token } from '../types/token';
 import util from 'util';
+import { ethereumConfig, kovanConfig, polygonConfig, bscConfig, arbitrumConfig, oracleConfig } from '../config';
+import { ethereumAsset, kovanAsset, polygonAsset, bscAsset, arbitrumAsset } from '../asset';
+import { ChainConfig, OracleConfig, PairConfig, Token } from '../types';
+import { CHAIN_ID, ORACLE_TYPE, PRODUCT_TYPE } from '../constants';
 
 /**
  * get chain id by name
@@ -83,8 +72,8 @@ function mapChainConfig(chainId: CHAIN_ID, jsonConfig) {
 
 function mapPairConfig(chainId: CHAIN_ID, pairConfig): { [key in ORACLE_TYPE]?: PairConfig } {
   const result = {};
-  for (const key of Object.keys(pairConfig)) {
-    result[key] = mapPairConfigInfo(chainId, pairConfig[key]);
+  for (const oracleType of Object.keys(pairConfig)) {
+    result[oracleType] = mapPairConfigInfo(chainId, oracleType as ORACLE_TYPE, pairConfig[oracleType]);
   }
   return result;
 }
@@ -95,9 +84,10 @@ function mapPairConfig(chainId: CHAIN_ID, pairConfig): { [key in ORACLE_TYPE]?: 
  * @param config
  * @returns
  */
-function mapPairConfigInfo(chainId: CHAIN_ID, config): PairConfig {
+function mapPairConfigInfo(chainId: CHAIN_ID, oracleType: ORACLE_TYPE, config): PairConfig {
+  const oracleConfig = getOracleConfig(oracleType);
   const pairConfig: PairConfig = {
-    name: config.name,
+    ...oracleConfig,
     baseTokens: config.baseTokens.map((symbol) => getToken(chainId, symbol)),
     quoteTokens: config.quoteTokens.map((symbol) => getToken(chainId, symbol)),
   };
@@ -181,6 +171,11 @@ export function getInfuraUrl(chainId: CHAIN_ID, infuraKey: string): string {
   return url.split(' ')[0];
 }
 
-// const conf = getChainConfig(CHAIN_ID.POLYGON);
-// console.info(JSON.stringify(conf.contractAddress.BtcHashRate.bitcoinMiningTracker));
-// console.info(conf.chainParams.marginConfig.USDT);
+/**
+ * get oracle config by oracle type
+ * @param oracleType ORACLE_TYPE
+ * @returns OracleConfig
+ */
+export function getOracleConfig(oracleType: ORACLE_TYPE): OracleConfig {
+  return oracleConfig[oracleType];
+}
