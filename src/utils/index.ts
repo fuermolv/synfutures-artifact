@@ -100,25 +100,34 @@ function mapPairConfigInfo(chainId: CHAIN_ID, oracleType: ORACLE_TYPE, config): 
  * @returns
  */
 export function getAssets(chainId: CHAIN_ID): Token[] {
+  function mapTokenChainId(tokens) {
+    return tokens.map(
+      (tokenWithoutChainId) =>
+        ({
+          ...tokenWithoutChainId,
+          chainId,
+        } as Token),
+    );
+  }
   switch (chainId) {
     case CHAIN_ID.ETHEREUM: {
-      const config: Token[] = ethereumAsset;
+      const config: Token[] = mapTokenChainId(ethereumAsset);
       return config;
     }
     case CHAIN_ID.BSC: {
-      const config: Token[] = bscAsset;
+      const config: Token[] = mapTokenChainId(bscAsset);
       return config;
     }
     case CHAIN_ID.POLYGON: {
-      const config: Token[] = polygonAsset;
+      const config: Token[] = mapTokenChainId(polygonAsset);
       return config;
     }
     case CHAIN_ID.ARBITURM: {
-      const config: Token[] = arbitrumAsset;
+      const config: Token[] = mapTokenChainId(arbitrumAsset);
       return config;
     }
     case CHAIN_ID.KOVAN: {
-      const config: Token[] = kovanAsset;
+      const config: Token[] = mapTokenChainId(kovanAsset);
       return config;
     }
     default: {
