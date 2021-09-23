@@ -53,9 +53,8 @@ function mapChainConfig(chainId: CHAIN_ID, jsonConfig) {
     chainId: chainId,
     nativeToken: getToken(chainId, jsonConfig.nativeToken),
     chainParams: {
-      marginConfig: jsonConfig.chainParams.marginConfig,
+      globalConfigs: jsonConfig.chainParams.globalConfigs,
       dexFactory: jsonConfig.chainParams.dexFactory,
-      globalConfig: jsonConfig.chainParams.globalConfig,
       chainlinkFeeders: jsonConfig.chainParams.chainlinkFeeders,
       products: jsonConfig.chainParams.products.map((productType: string) => PRODUCT_TYPE[productType.toUpperCase()]),
     },

@@ -37,8 +37,13 @@ export interface PairConfig extends OracleConfig {
 }
 
 export interface ChainParams {
-  marginConfig: { [key: string]: MarginConfig };
-  globalConfig: GlobalConfig;
+  globalConfigs: {
+    [productType in PRODUCT_TYPE]?: {
+      marginConfig: { [tokenSymbol: string]: MarginConfig };
+      globalConfig: GlobalConfig;
+    };
+  };
+
   dexFactory: string;
   chainlinkFeeders: { [key: string]: string };
   products: PRODUCT_TYPE[];
