@@ -5,7 +5,7 @@
     "symbol": "MATIC",
     "decimals": 18,
     "native": true,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_eth.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_matic.svg"
   },
   {
     "name": "Wrapped Ether",
