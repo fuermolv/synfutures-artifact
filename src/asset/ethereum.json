@@ -83,5 +83,12 @@
     "symbol": "CHAINLINK-XAU",
     "decimals": 8,
     "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_xau.svg"
+  },
+  {
+    "symbol": "MATIC",
+    "name": "Matic Token",
+    "address": "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_matic.svg"
   }
 ]
