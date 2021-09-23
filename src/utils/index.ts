@@ -186,5 +186,7 @@ export function getInfuraUrl(chainId: CHAIN_ID, infuraKey: string): string {
  * @returns OracleConfig
  */
 export function getOracleConfig(oracleType: ORACLE_TYPE): OracleConfig {
-  return oracleConfig[oracleType];
+  return {
+    ...oracleConfig[oracleType],
+  } as OracleConfig;
 }
