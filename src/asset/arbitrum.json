@@ -1,45 +1,45 @@
 [
-    {
-        "name":"Arbitrum Ether",
-        "address":"0x0000000000000000000000000000000000000000",
-        "symbol":"AETH",
-        "decimals":18,
-        "native": true,        
-        "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
-    },
-    {
-        "name":"Wrapped Ether",
-        "address":"0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
-        "symbol":"WETH",
-        "decimals":18,
-        "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
-    },
-    {
-        "name":"WBTC Token",
-        "address":"0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
-        "symbol":"WBTC",
-        "decimals":8,
-        "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png"
-    },
-    {
-        "name":"Tether USD",
-        "address":"0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
-        "symbol":"USDT",
-        "decimals":6,
-        "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
-    },
-    {
-        "name":"USD Coin",
-        "address":"0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
-        "symbol":"USDC",
-        "decimals":6,
-        "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
-    },
-    {
-        "name": "(BTC) Bitcoin",
-        "address": "0x0000000000000000000000000000000000000000",
-        "symbol": "CHAINLINK-BTC",
-        "decimals": 8,
-        "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_btc.svg"
-    }
+  {
+    "name": "Arbitrum Ether",
+    "address": "0x0000000000000000000000000000000000000000",
+    "symbol": "AETH",
+    "decimals": 18,
+    "native": true,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_eth.svg"
+  },
+  {
+    "name": "Wrapped Ether",
+    "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+    "symbol": "WETH",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_eth.svg"
+  },
+  {
+    "name": "WBTC Token",
+    "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_wbtc.svg"
+  },
+  {
+    "name": "Tether USD",
+    "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "symbol": "USDT",
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdt.svg"
+  },
+  {
+    "name": "USD Coin",
+    "address": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdc.svg"
+  },
+  {
+    "name": "(BTC) Bitcoin",
+    "address": "0x0000000000000000000000000000000000000000",
+    "symbol": "CHAINLINK-BTC",
+    "decimals": 8,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_btc.svg"
+  }
 ]
