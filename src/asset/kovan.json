@@ -12,65 +12,65 @@
     "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
     "symbol": "WETH",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_eth.svg"
   },
   {
     "name": "LINK Token",
-    "address": "0xa36085F69e2889c224210F603D836748e7dC0088",
+    "address": "0x935d0754b1707ab589f0ef26c977ced8fd729d92",
     "symbol": "LINK",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/41339bcb3ecc7c86ccc7abe4ec5fa870b9301d0a/blockchains/iotex/validators/assets/link/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_chainlink.svg"
   },
   {
     "name": "Uniswap Token",
-    "address": "0x9b6ff80ff8348852d5281de45e66b7ed36e7b8a9",
+    "address": "0x7c524ec8848e64d3dd884052fdff85c77fd504ad",
     "symbol": "UNI",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/UNI-DD8/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_uniswap.svg"
   },
 
   {
     "name": "Aave Token",
-    "address": "0xb597cd8d3217ea6477232f9217fa70837ff667af",
+    "address": "0xd1ab3e5ea14e8c6ef45b4b7f2d5eed1c5b77b112",
     "symbol": "AAVE",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/AAVE-8FA/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_aave.svg"
   },
-  
+
   {
     "name": "Compound Token",
-    "address": "0x61460874a7196d6a22d1ee4922473664b3e95270",
+    "address": "0xe921dfd5de4f1b6055040c982af237b529fc0b5f",
     "symbol": "COMP",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/COMP-DEE/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_comp.svg"
   },
   {
     "name": "DAI Token",
-    "address": "0x815343B0FcA4f9b49c89118E66b21fBFCA51b3Eb",
+    "address": "0x815343b0fca4f9b49c89118e66b21fbfca51b3eb",
     "symbol": "DAI",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_dai.svg"
   },
   {
     "name": "USDT Token",
-    "address": "0x2568d37520C08Ecc772f5feb9705e7b8Ca248535",
+    "address": "0x2568d37520c08ecc772f5feb9705e7b8ca248535",
     "symbol": "USDT",
     "decimals": 6,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdt.svg"
   },
   {
     "name": "USDC Token",
-    "address": "0x51D102A0203999110BC13B1ddf1c78566C02040A",
+    "address": "0x51d102a0203999110bc13b1ddf1c78566c02040a",
     "symbol": "USDC",
     "decimals": 6,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdc.svg"
   },
   {
     "name": "WBTC Token",
-    "address": "0xd19eB5103b2238f5738411D367F528A5340ED943",
+    "address": "0xd19eb5103b2238f5738411d367f528a5340ed943",
     "symbol": "WBTC",
     "decimals": 8,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_wbtc.svg"
   },
   {
     "name": "BTCHASH",

@@ -1,67 +1,65 @@
 {
-  "chainId":42161,
-  "chainName":"Arbitrum One",
-  "nativeToken":"AETH",
-  "rpcUrl":"https://arb1.arbitrum.io/rpc",
-  "infuraUrl":"https://arbitrum-mainnet.infura.io/v3/%s",
-  "blockExplorerUrl":"https://arbiscan.io/",
-  "blockTime":3000,
-  "contractAddress":{
-      "Basic":{
-          "globalConfig":"0xbD791Ab6AE364E176D5e2204B175C627A2814A34",
-          "oracleController":"0x1C8f6a0656ab70978170FdC00952466D7Ca27bAF",
-          "factory":"0x1E7dB497d664E77fC96321A1ad0bf018E55CBfF8",
-          "reader":"0x138F7C8031D9e5f24e0883d17bD88D2EFa9a072D"
-      }
+  "chainId": 42161,
+  "chainName": "Arbitrum One",
+  "nativeToken": "AETH",
+  "rpcUrl": "https://arb1.arbitrum.io/rpc",
+  "infuraUrl": "https://arbitrum-mainnet.infura.io/v3/%s",
+  "blockExplorerUrl": "https://arbiscan.io/",
+  "blockTime": 3000,
+  "contractAddress": {
+    "Basic": {
+      "globalConfig": "0xbD791Ab6AE364E176D5e2204B175C627A2814A34",
+      "oracleController": "0x1C8f6a0656ab70978170FdC00952466D7Ca27bAF",
+      "factory": "0x1E7dB497d664E77fC96321A1ad0bf018E55CBfF8",
+      "reader": "0x138F7C8031D9e5f24e0883d17bD88D2EFa9a072D"
+    }
   },
-  "subgraphUrl":"https://api.studio.thegraph.com/query/4400/arbitrum/v_1.1.202108311613",
-  "chainParams":{
-      "marginConfig":{
-          "USDC":{
-              "allowed":true,
-              "alignToFriday":true
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/arbitrum/v_1.1.202108311613",
+  "chainParams": {
+    "globalConfigs": {
+      "BASIC": {
+        "marginConfig": {
+          "USDC": {
+            "allowed": true,
+            "alignToFriday": true
           },
-          "AETH":{
-              "allowed":true,
-              "alignToFriday":true
+          "AETH": {
+            "allowed": true,
+            "alignToFriday": true
           }
-      },
-      "globalConfig":{
-          "emaTimeConstant":600,
-          "poolFeeRatio":25,
-          "poolReserveFeeRatio":5,
-          "maxPriceSlippageRatio":1000,
-          "maxInitialDailyBasis":50,
-          "maxUserTradeOpenInterestRatio":500,
-          "minAmmOpenInterestRatio":500,
-          "maxSpotIndexChangePerSecondRatio":10,
-          "initialMarginRatio":1000,
-          "maintenanceMarginRatio":500,
-          "bankruptcyLiquidatorRewardRatio":100,
-          "insurancePremiumRatio":200
-      },
-      "dexFactory":"0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
-      "chainlinkFeeders":{
-          "BTC/USD":"0x6ce185860a4963106506C203335A2910413708e9"
-      },
-      "products":[
-          "BASIC"
-      ]
-  },
-  "pairConfig":{
-      "CHAINLINK":{
-          "name":"Chainlink",
-          "baseTokens":[
-              "CHAINLINK-BTC"
-          ],
-          "quoteTokens":[
-              "USDC"
-          ]
+        },
+        "globalConfig": {
+          "emaTimeConstant": 600,
+          "poolFeeRatio": 25,
+          "poolReserveFeeRatio": 5,
+          "maxPriceSlippageRatio": 1000,
+          "maxInitialDailyBasis": 50,
+          "maxUserTradeOpenInterestRatio": 500,
+          "minAmmOpenInterestRatio": 500,
+          "maxSpotIndexChangePerSecondRatio": 10,
+          "initialMarginRatio": 1000,
+          "maintenanceMarginRatio": 500,
+          "bankruptcyLiquidatorRewardRatio": 100,
+          "insurancePremiumRatio": 200
+        }
       }
+    },
+    "dexFactory": "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
+    "chainlinkFeeders": {
+      "BTC/USD": "0x6ce185860a4963106506C203335A2910413708e9"
+    },
+    "products": ["BASIC"]
   },
-  "defaultPair":{
-      "oracleType":"CHAINLINK",
-      "base":"CHAINLINK-BTC",
-      "quote":"USDC"
+  "pairConfig": {
+    "CHAINLINK": {
+      "name": "Chainlink",
+      "baseTokens": ["CHAINLINK-BTC"],
+      "quoteTokens": ["USDC"]
+    }
+  },
+  "defaultPair": {
+    "oracleType": "CHAINLINK",
+    "base": "CHAINLINK-BTC",
+    "quote": "USDC"
   }
 }

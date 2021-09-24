@@ -24,15 +24,26 @@ export interface ContractAddress {
   bitcoinMiningTracker?: string;
 }
 
-export interface PairConfig {
+export interface OracleConfig {
   name: string;
+  symbol: string;
+  oracleType: ORACLE_TYPE;
+  logoURI: string;
+}
+
+export interface PairConfig extends OracleConfig {
   baseTokens: Token[];
   quoteTokens: Token[];
 }
 
 export interface ChainParams {
-  marginConfig: { [key: string]: MarginConfig };
-  globalConfig: GlobalConfig;
+  globalConfigs: {
+    [productType in PRODUCT_TYPE]?: {
+      marginConfig: { [tokenSymbol: string]: MarginConfig };
+      globalConfig: GlobalConfig;
+    };
+  };
+
   dexFactory: string;
   chainlinkFeeders: { [key: string]: string };
   products: PRODUCT_TYPE[];
