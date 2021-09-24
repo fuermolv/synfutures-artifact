@@ -24,7 +24,7 @@
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/kovan/v_1.1.202108311528",
   "chainParams": {
     "globalConfigs": {
-      "BTCHASHRATE": {
+      "BtcHashRate": {
         "marginConfig": {
           "WBTC": {
             "allowed": true,
@@ -46,7 +46,7 @@
           "insurancePremiumRatio": 200
         }
       },
-      "BASIC": {
+      "Basic": {
         "marginConfig": {
           "USDC": {
             "allowed": true,
@@ -87,7 +87,7 @@
       "BTC/ETH": "0xF7904a295A029a3aBDFFB6F12755974a958C7C25",
       "XAU/USD": "0xc8fb5684f2707C82f28595dEaC017Bfdf44EE9c5"
     },
-    "products": ["BTCHASHRATE", "BASIC"]
+    "products": ["BtcHashRate", "Basic"]
   },
   "pairConfig": {
     "SYNFUTURES": {

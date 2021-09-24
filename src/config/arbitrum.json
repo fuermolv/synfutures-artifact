@@ -17,7 +17,7 @@
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/arbitrum/v_1.1.202108311613",
   "chainParams": {
     "globalConfigs": {
-      "BASIC": {
+      "Basic": {
         "marginConfig": {
           "USDC": {
             "allowed": true,
@@ -48,7 +48,7 @@
     "chainlinkFeeders": {
       "BTC/USD": "0x6ce185860a4963106506C203335A2910413708e9"
     },
-    "products": ["BASIC"]
+    "products": ["Basic"]
   },
   "pairConfig": {
     "CHAINLINK": {

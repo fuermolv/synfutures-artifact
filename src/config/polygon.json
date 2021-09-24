@@ -24,7 +24,7 @@
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/polygon/v_1.1.202109171109",
   "chainParams": {
     "globalConfigs": {
-      "BTCHASHRATE": {
+      "BtcHashRate": {
         "marginConfig": {
           "WBTC": {
             "allowed": true,
@@ -85,7 +85,7 @@
     "chainlinkFeeders": {
       "BTC/USD": "0xc907E116054Ad103354f2D350FD2514433D57F6f"
     },
-    "products": ["BTCHASHRATE", "BASIC"]
+    "products": ["BtcHashRate", "Basic"]
   },
   "pairConfig": {
     "SYNFUTURES": {
