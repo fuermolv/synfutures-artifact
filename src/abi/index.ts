@@ -5,7 +5,8 @@ import * as FACTORY_ABI from './Factory.json';
 import * as READER_ABI from './Reader.json';
 import * as FUTURES_ABI from './Futures.json';
 import * as KOVAN_ERC20_ABI from './Kovan_ERC20.json';
-import * as BTCHASH_ORACLE_ABI from './oracle/bitcoin-mining-tracker.json';
+import * as BTCHASH_MINING_TRACKER_ABI from './oracle/bitcoin-mining-tracker.json';
+import * as BTCHASH_ORACLE_ABI from './btchash/Oracle.json';
 
 export {
   ERC20_ABI,
@@ -16,4 +17,5 @@ export {
   FUTURES_ABI,
   KOVAN_ERC20_ABI,
   BTCHASH_ORACLE_ABI,
+  BTCHASH_MINING_TRACKER_ABI,
 };
