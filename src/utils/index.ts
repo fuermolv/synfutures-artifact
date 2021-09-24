@@ -47,7 +47,8 @@ export function getChainConfig(chainId: CHAIN_ID): ChainConfig {
  * @param jsonConfig
  * @returns
  */
-function mapChainConfig(chainId: CHAIN_ID, jsonConfig) {
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export function mapChainConfig(chainId: CHAIN_ID, jsonConfig): ChainConfig {
   const config: ChainConfig = {
     ...jsonConfig,
     chainId: chainId,
