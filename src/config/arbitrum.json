@@ -31,7 +31,7 @@
         "globalConfig": {
           "emaTimeConstant": 600,
           "poolFeeRatio": 25,
-          "poolReserveFeeRatio": 5,
+          "poolReserveFeeRatio": 1,
           "maxPriceSlippageRatio": 1000,
           "maxInitialDailyBasis": 50,
           "maxUserTradeOpenInterestRatio": 500,
