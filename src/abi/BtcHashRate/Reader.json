@@ -1,0 +1,277 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "factoryAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "quote",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expiry",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBtcHashRateContractAddresses",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "ammProxy",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "futuresProxy",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "constant": true
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ammAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "futuresAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      }
+    ],
+    "name": "getAmmDetail",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      },
+      {
+        "internalType": "enum Types.Status",
+        "name": "status",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "spotIndexPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "midPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ammPosition",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ammMarginBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "shareBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "shareTotalSupply",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "constant": true
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "futuresAddr",
+        "type": "address"
+      }
+    ],
+    "name": "getFuturesDetail",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "margin",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "marginSymbol",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "openInterests",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "insuranceFund",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "constant": true
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ammAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBuyPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "initialMargin",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "constant": true
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ammAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSellPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "initialMargin",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "constant": true
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "futuresAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      }
+    ],
+    "name": "getAccountDetail",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      },
+      {
+        "internalType": "int256",
+        "name": "position",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "entryPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "markPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "accountBalance",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "unrealPnl",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "liqPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "positionMargin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "mainMargin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "availableMargin",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "constant": true
+  }
+]
