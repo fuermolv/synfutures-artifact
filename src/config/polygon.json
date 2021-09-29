@@ -46,7 +46,7 @@
           "insurancePremiumRatio": 200
         }
       },
-      "BASIC": {
+      "Basic": {
         "marginConfig": {
           "USDC": {
             "allowed": true,
