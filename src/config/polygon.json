@@ -34,7 +34,7 @@
         "globalConfig": {
           "emaTimeConstant": 600,
           "poolFeeRatio": 25,
-          "poolReserveFeeRatio": 5,
+          "poolReserveFeeRatio": 1,
           "maxPriceSlippageRatio": 500,
           "maxInitialDailyBasis": 1000,
           "maxUserTradeOpenInterestRatio": 500,
@@ -46,7 +46,7 @@
           "insurancePremiumRatio": 200
         }
       },
-      "BASIC": {
+      "Basic": {
         "marginConfig": {
           "USDC": {
             "allowed": true,
@@ -68,7 +68,7 @@
         "globalConfig": {
           "emaTimeConstant": 600,
           "poolFeeRatio": 25,
-          "poolReserveFeeRatio": 5,
+          "poolReserveFeeRatio": 1,
           "maxPriceSlippageRatio": 1000,
           "maxInitialDailyBasis": 50,
           "maxUserTradeOpenInterestRatio": 500,
