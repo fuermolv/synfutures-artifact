@@ -28,5 +28,5 @@ export enum CHAIN_ID {
   KOVAN = 42,
   BSC = 56,
   POLYGON = 137,
-  ARBITURM = 42161,
+  ARBITRUM = 42161,
 }
