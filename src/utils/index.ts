@@ -29,7 +29,7 @@ export function getChainConfig(chainId: CHAIN_ID): ChainConfig {
     case CHAIN_ID.POLYGON: {
       return mapChainConfig(chainId, polygonConfig);
     }
-    case CHAIN_ID.ARBITURM: {
+    case CHAIN_ID.ARBITRUM: {
       return mapChainConfig(chainId, arbitrumConfig);
     }
     case CHAIN_ID.KOVAN: {
@@ -122,7 +122,7 @@ export function getAssets(chainId: CHAIN_ID): Token[] {
       const config: Token[] = mapTokenChainId(polygonAsset);
       return config;
     }
-    case CHAIN_ID.ARBITURM: {
+    case CHAIN_ID.ARBITRUM: {
       const config: Token[] = mapTokenChainId(arbitrumAsset);
       return config;
     }
