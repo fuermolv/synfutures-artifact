@@ -22,6 +22,7 @@ export interface ContractAddress {
   factory: string;
   reader: string;
   bitcoinMiningTracker?: string;
+  observer: string;
 }
 
 export interface OracleConfig {

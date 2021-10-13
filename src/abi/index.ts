@@ -12,6 +12,7 @@ import * as BTCHASHRATE_AMM_ABI from './BtcHashRate/Amm.json';
 import * as BTCHASHRATE_FACTORY_ABI from './BtcHashRate/Factory.json';
 import * as BTCHASHRATE_READER_ABI from './BtcHashRate/Reader.json';
 import * as BTCHASHRATE_FUTURES_ABI from './BtcHashRate/Futures.json';
+import * as OBSERVER_ABI from './observer.json';
 
 export {
   ERC20_ABI,
@@ -28,4 +29,5 @@ export {
   BTCHASHRATE_FACTORY_ABI,
   BTCHASHRATE_READER_ABI,
   BTCHASHRATE_FUTURES_ABI,
+  OBSERVER_ABI,
 };

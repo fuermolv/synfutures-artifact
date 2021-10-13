@@ -1,0 +1,513 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "factoryAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "start",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "end",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPairs",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "amm",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "futures",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "enum Types.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "oracle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "margin",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "marginSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "spotPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fairPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "markPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "shareTotalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ammPosition",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ammAvailableMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "openInterests",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "insuranceFund",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "socialLossPerLong",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "socialLossPerShort",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct Observer.PairState[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "ammAddrs",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "futuresAddrs",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getPairsForUser",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "amm",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "futures",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "enum Types.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "oracle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "margin",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "marginSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "spotPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fairPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "markPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "shareTotalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ammPosition",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ammAvailableMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "openInterests",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "insuranceFund",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "socialLossPerLong",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "socialLossPerShort",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct Observer.PairState[]",
+        "name": "",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "balance",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "position",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "entryNotional",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "entrySocialLoss",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "shareBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "marginBalance",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "unrealPnl",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "mainMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "availableMargin",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liqPrice",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Observer.AccountState[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ammAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "futuresAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "users",
+        "type": "address[]"
+      }
+    ],
+    "name": "getUsersForPair",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "amm",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "futures",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "enum Types.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "oracle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "margin",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "marginSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "spotPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fairPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "markPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "shareTotalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ammPosition",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ammAvailableMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "openInterests",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "insuranceFund",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "socialLossPerLong",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "socialLossPerShort",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct Observer.PairState",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "balance",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "position",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "entryNotional",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "entrySocialLoss",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "shareBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "marginBalance",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "unrealPnl",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "mainMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "availableMargin",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liqPrice",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Observer.AccountState[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nativeTokenSymbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
