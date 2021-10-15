@@ -11,7 +11,8 @@
       "globalConfig": "0x928e85ec6a7f6dc4aa8211428e9e49e89e1b8f04",
       "oracleController": "0xf81ee8cdd0a1aa168d68d6371afd32436c42a493",
       "factory": "0x6e893ddfa75d67febb853e00f81c913c151bf9a9",
-      "reader": "0x4f6eeed538d289490a073ed4c7711ced20dad46e"
+      "reader": "0x4f6eeed538d289490a073ed4c7711ced20dad46e",
+      "observer": "0x41576F2764B56Ed5F3c167833B8411314Cc54580"
     }
   },
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/mainnet/v_1.1.202110081933",
