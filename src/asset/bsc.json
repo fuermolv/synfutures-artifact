@@ -5,55 +5,55 @@
     "symbol": "BNB",
     "decimals": 18,
     "native": true,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_bnb.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/bnb.svg"
   },
   {
     "name": "Wrapped Ether",
     "address": "0x2aab30a909748945d42c7d29d3cd44a5680cab1d",
     "symbol": "WETH",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_eth.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/eth.svg"
   },
   {
     "name": "WBTC Token",
     "address": "0xa01b9cafe2230093fbf0000b43701e03717f77ce",
     "symbol": "WBTC",
     "decimals": 8,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_wbtc.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/wbtc.svg"
   },
   {
     "name": "Tether USD",
     "address": "0x55d398326f99059ff775485246999027b3197955",
     "symbol": "USDT",
     "decimals": 6,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdt.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/usdt.svg"
   },
   {
     "name": "USD Coin",
     "address": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
     "symbol": "USDC",
     "decimals": 6,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdc.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/usdc.svg"
   },
   {
     "name": "DAI Token",
     "address": "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",
     "symbol": "DAI",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_dai.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/dai.svg"
   },
   {
     "name": "Binance USD",
     "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
     "symbol": "BUSD",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_busd.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/busd.svg"
   },
   {
     "name": "PancakeSwap",
     "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
     "symbol": "CAKE",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_cake.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/cake.svg"
   }
 ]

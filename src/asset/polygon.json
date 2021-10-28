@@ -5,55 +5,55 @@
     "symbol": "MATIC",
     "decimals": 18,
     "native": true,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_matic.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/matic.svg"
   },
   {
     "name": "Wrapped Ether",
     "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
     "symbol": "WETH",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_eth.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/eth.svg"
   },
   {
     "name": "(PoS) Dai Stablecoin",
     "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
     "symbol": "DAI",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_dai.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/dai.svg"
   },
   {
     "name": "(PoS) Tether USD",
     "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
     "symbol": "USDT",
     "decimals": 6,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdt.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/usdt.svg"
   },
   {
     "name": "USDCoin (PoS)",
     "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
     "symbol": "USDC",
     "decimals": 6,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdc.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/usdc.svg"
   },
   {
     "name": "(PoS) Wrapped BTC",
     "address": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
     "symbol": "WBTC",
     "decimals": 8,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_wbtc.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/wbtc.svg"
   },
   {
     "name": "BTCHASH",
     "address": "0x0000000000000000000000000000000000000000",
     "symbol": "SYNFUTURES-BTCHASH",
     "decimals": 8,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_mining.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/btchash.svg"
   },
   {
     "name": "(BTC) Bitcoin",
     "address": "0x0000000000000000000000000000000000000000",
     "symbol": "CHAINLINK-BTC",
     "decimals": 8,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_btc.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/btc.svg"
   }
 ]

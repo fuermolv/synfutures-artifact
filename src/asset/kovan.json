@@ -5,28 +5,28 @@
     "symbol": "ETH",
     "decimals": 18,
     "native": true,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_eth.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/eth.svg"
   },
   {
     "name": "Wrapped Ether",
     "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
     "symbol": "WETH",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_eth.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/eth.svg"
   },
   {
     "name": "LINK Token",
     "address": "0x935d0754b1707ab589f0ef26c977ced8fd729d92",
     "symbol": "LINK",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_chainlink.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/link.svg"
   },
   {
     "name": "Uniswap Token",
     "address": "0x7c524ec8848e64d3dd884052fdff85c77fd504ad",
     "symbol": "UNI",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_uniswap.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/uni.svg"
   },
 
   {
@@ -34,7 +34,7 @@
     "address": "0xd1ab3e5ea14e8c6ef45b4b7f2d5eed1c5b77b112",
     "symbol": "AAVE",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_aave.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/aave.svg"
   },
 
   {
@@ -42,55 +42,55 @@
     "address": "0xe921dfd5de4f1b6055040c982af237b529fc0b5f",
     "symbol": "COMP",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_comp.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/comp.svg"
   },
   {
     "name": "DAI Token",
     "address": "0x815343b0fca4f9b49c89118e66b21fbfca51b3eb",
     "symbol": "DAI",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_dai.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/dai.svg"
   },
   {
     "name": "USDT Token",
     "address": "0x2568d37520c08ecc772f5feb9705e7b8ca248535",
     "symbol": "USDT",
     "decimals": 6,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdt.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/usdt.svg"
   },
   {
     "name": "USDC Token",
     "address": "0x51d102a0203999110bc13b1ddf1c78566c02040a",
     "symbol": "USDC",
     "decimals": 6,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_usdc.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/usdc.svg"
   },
   {
     "name": "WBTC Token",
     "address": "0xd19eb5103b2238f5738411d367f528a5340ed943",
     "symbol": "WBTC",
     "decimals": 8,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_wbtc.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/wbtc.svg"
   },
   {
     "name": "BTCHASH",
     "address": "0x0000000000000000000000000000000000000000",
     "symbol": "SYNFUTURES-BTCHASH",
     "decimals": 8,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_mining.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/btchash.svg"
   },
   {
     "name": "(BTC) Bitcion",
     "address": "0x0000000000000000000000000000000000000000",
     "symbol": "CHAINLINK-BTC",
     "decimals": 8,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_btc.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/btc.svg"
   },
   {
     "name": "XAU",
     "address": "0x0000000000000000000000000000000000000000",
     "symbol": "CHAINLINK-XAU",
     "decimals": 8,
-    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/tokens/icon_crypto_xau.svg"
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/xau.svg"
   }
 ]
