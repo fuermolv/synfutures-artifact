@@ -16,6 +16,7 @@
     }
   },
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/mainnet/v_1.1.202110081933",
+  "subgraphDeploymentId": "QmbS1hhHLiW713djKuEwyJRDjJvFAsJGzobug2qa6Qnuzn",
   "chainParams": {
     "globalConfigs": {
       "Basic": {

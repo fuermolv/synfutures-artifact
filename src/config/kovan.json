@@ -23,7 +23,8 @@
       "observer": "0xEB04947FA749abc1705D0e5a35F626D3075898be"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/kovan/v_1.1.202110081924",
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/kovan/v_1.1.202110312120",
+  "subgraphDeploymentId": "QmYyTLeD8CEdTfdptt8s6Cjt7ejf4tFQCPEvdps8KZSbN5",
   "chainParams": {
     "globalConfigs": {
       "BtcHashRate": {
