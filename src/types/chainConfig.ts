@@ -10,6 +10,7 @@ export interface ChainConfig {
   blockExplorerUrl: string;
   blockTime: number;
   subgraphUrl: string;
+  subgraphDeploymentId: string;
   chainParams: ChainParams;
   pairConfig: { [key in ORACLE_TYPE]?: PairConfig };
   contractAddress: { [key in PRODUCT_TYPE]?: ContractAddress };
