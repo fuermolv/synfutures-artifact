@@ -58,7 +58,7 @@
     "PANCAKEV2": {
       "name": "Pancake V2",
       "baseTokens": ["BNB"],
-      "quoteTokens": ["BUSD"]
+      "quoteTokens": ["BUSD", "BNB"]
     }
   },
   "defaultPair": {
