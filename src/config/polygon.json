@@ -66,6 +66,10 @@
           "WETH": {
             "allowed": true,
             "alignToFriday": true
+          },
+          "MATIC": {
+            "allowed": true,
+            "alignToFriday": true
           }
         },
         "globalConfig": {
@@ -104,7 +108,7 @@
     "SUSHISWAP": {
       "name": "SushiSwap",
       "baseTokens": ["WETH", "MATIC"],
-      "quoteTokens": ["USDC", "USDT", "DAI", "WETH"]
+      "quoteTokens": ["USDC", "USDT", "DAI", "WETH", "MATIC"]
     }
   },
   "defaultPair": {
