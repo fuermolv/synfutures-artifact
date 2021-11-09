@@ -12,7 +12,7 @@
       "oracleController": "0xf81ee8cdd0a1aa168d68d6371afd32436c42a493",
       "factory": "0x6e893ddfa75d67febb853e00f81c913c151bf9a9",
       "reader": "0x4f6eeed538d289490a073ed4c7711ced20dad46e",
-      "observer": "0x54Cf31502FD5188960E6115e3c501D9ea0695195"
+      "observer": "0x2B0DA51239917699c9766Aab8E882294a3ECF8f1"
     },
     "BtcHashRate": {
       "factory": "0x24de4E74Dec1200577838081EE4C0665911ae4Ee",
@@ -20,7 +20,7 @@
       "globalConfig": "0xa74eB4CeC710573A180a1105e3c55B608219B375",
       "oracleController": "0x381a5b89D0B48AB592d0e0C6e9CFaefcf0DF9e26",
       "bitcoinMiningTracker": "0x4d5a81EB9EAa62b27bF2dEc70713bFC50F20cFC0",
-      "observer": "0x54Cf31502FD5188960E6115e3c501D9ea0695195"
+      "observer": "0x2B0DA51239917699c9766Aab8E882294a3ECF8f1"
     }
   },
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/polygon/v_1.1.202109171109",
