@@ -12,7 +12,7 @@
       "oracleController": "0xf81ee8cdd0a1aa168d68d6371afd32436c42a493",
       "factory": "0x6e893ddfa75d67febb853e00f81c913c151bf9a9",
       "reader": "0x4f6eeed538d289490a073ed4c7711ced20dad46e",
-      "observer": "0x43Ab946B0e8A3d64832cc70082232EAf81aCBb5e"
+      "observer": "0x5010AE144ad5913771CfCBeaceC7b2ed870240d9"
     },
     "BtcHashRate": {
       "factory": "0x24de4E74Dec1200577838081EE4C0665911ae4Ee",
@@ -20,7 +20,7 @@
       "globalConfig": "0xa74eB4CeC710573A180a1105e3c55B608219B375",
       "oracleController": "0x381a5b89D0B48AB592d0e0C6e9CFaefcf0DF9e26",
       "bitcoinMiningTracker": "0x4d5a81eb9eaa62b27bf2dec70713bfc50f20cfc0",
-      "observer": "0x43Ab946B0e8A3d64832cc70082232EAf81aCBb5e"
+      "observer": "0x5010AE144ad5913771CfCBeaceC7b2ed870240d9"
     }
   },
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/kovan/v_1.1.202110312120",
