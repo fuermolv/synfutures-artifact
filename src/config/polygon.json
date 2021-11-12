@@ -107,7 +107,7 @@
     },
     "SUSHISWAP": {
       "name": "SushiSwap",
-      "baseTokens": ["WETH", "MATIC"],
+      "baseTokens": ["MATIC", "WETH", "WBTC"],
       "quoteTokens": ["USDC", "USDT", "DAI", "WETH", "MATIC"]
     }
   },
