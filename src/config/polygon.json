@@ -23,9 +23,9 @@
       "observer": "0x2B0DA51239917699c9766Aab8E882294a3ECF8f1"
     }
   },
-  "subgraphUrl": "http://ec2-18-166-208-112.ap-east-1.compute.amazonaws.com:8000/subgraphs/name/synfutures_v1_polygon",
+  "subgraphUrl": "https://2l6s9hlfp6.execute-api.ap-east-1.amazonaws.com/synfutures/polygon",
   "subgraphDeploymentId": "QmR5yYrc6gJV1wFrmHszB6P3LyUgoBUuCuNEgdeEtCjySd",
-  "backupSubgraphUrl": "http://ec2-18-166-208-112.ap-east-1.compute.amazonaws.com:8000/subgraphs/name/synfutures_v1_polygon",
+  "backupSubgraphUrl": "https://2l6s9hlfp6.execute-api.ap-east-1.amazonaws.com/synfutures/polygon",
   "backupSubgraphDeploymentId": "QmR5yYrc6gJV1wFrmHszB6P3LyUgoBUuCuNEgdeEtCjySd",
   "chainParams": {
     "globalConfigs": {
