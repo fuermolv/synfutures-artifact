@@ -11,6 +11,8 @@ export interface ChainConfig {
   blockTime: number;
   subgraphUrl: string;
   subgraphDeploymentId: string;
+  backupSubgraphUrl: string;
+  backupSubgraphDeploymentId: string;
   chainParams: ChainParams;
   pairConfig: { [key in ORACLE_TYPE]?: PairConfig };
   contractAddress: { [key in PRODUCT_TYPE]?: ContractAddress };
