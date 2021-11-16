@@ -15,8 +15,8 @@
       "observer": "0x4120b570ae57949953218c1a83104f6E41944Be1"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/arbitrum/v_1.1.202110081931",
-  "subgraphDeploymentId": "Qmdd9fn4cSK6y5qNiC5VCGH9pp3a4L4mnwZJmi5LxpNHpX",
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/arbitrum/v_1.1.202111121423",
+  "subgraphDeploymentId": "Qme82APPeG9ndJTAzi5ed4xnuT5Q2dGEQeTX3CPQ8Xu71w",
   "chainParams": {
     "globalConfigs": {
       "Basic": {
