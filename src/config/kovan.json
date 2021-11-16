@@ -4,7 +4,7 @@
   "nativeToken": "ETH",
   "rpcUrl": "https://kovan.infura.io/v3",
   "infuraUrl": "https://kovan.infura.io/v3/%s",
-  "blockExplorerUrl": "https://etherscan.com",
+  "blockExplorerUrl": "https://kovan.etherscan.io",
   "blockTime": 4000,
   "contractAddress": {
     "Basic": {
