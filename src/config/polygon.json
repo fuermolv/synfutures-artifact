@@ -23,8 +23,8 @@
       "observer": "0x2B0DA51239917699c9766Aab8E882294a3ECF8f1"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/polygon/v_1.1.202111151434",
-  "subgraphDeploymentId": "QmRC2FKqj6PAvrhheQeDtbd2r11DvaGdYPumxFaZdYo4em",
+  "subgraphUrl": "https://api.thegraph.com/subgraphs/name/synfutures/polygon-v1",
+  "subgraphDeploymentId": "QmWvswcBXZSGjj67zzsf53auj4JYmdaH5Rhhp5GQ2x9hYW",
   "backupSubgraphUrl": "https://2l6s9hlfp6.execute-api.ap-east-1.amazonaws.com/synfutures/polygon",
   "backupSubgraphDeploymentId": "QmR5yYrc6gJV1wFrmHszB6P3LyUgoBUuCuNEgdeEtCjySd",
   "chainParams": {
