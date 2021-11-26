@@ -15,7 +15,7 @@
       "observer": "0x89947f4EDe2275aF7b1d4e181ea250fb1fCAe465"
     }
   },
-  "subgraphUrl": "https://api.thegraph.com/subgraphs/name/synfutures/bsc-v1",
+  "subgraphUrl": "https://2l6s9hlfp6.execute-api.ap-east-1.amazonaws.com/thegraph/synfutures/bsc-v1",
   "subgraphDeploymentId": "QmQcF1goKyK9Gyrd1SADmzQx5AqU2wAAr57QQnTM75RMQX",
   "backupSubgraphUrl": "http://ec2-18-166-208-112.ap-east-1.compute.amazonaws.com:8000/subgraphs/name/synfutures_v1_bsc",
   "backupSubgraphDeploymentId": "QmRzf5yC2jAj2ZjTCc7rKoom3DzdpbQvuerDYQCkqDhc26",
