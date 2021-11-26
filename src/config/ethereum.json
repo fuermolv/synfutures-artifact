@@ -16,7 +16,7 @@
     }
   },
   "subgraphUrl": "https://2l6s9hlfp6.execute-api.ap-east-1.amazonaws.com/thegraph/synfutures/ethereum-v1",
-  "subgraphDeploymentId": "QmS7GdJ9hpVX9czxp46ZBU1eMBS4A4drL1XwgPhyDSdmc9",
+  "subgraphDeploymentId": "QmZDZjksMniHp36cmnhQj6uufhjmektN3YB7zxHMXbZ2tZ",
   "chainParams": {
     "globalConfigs": {
       "Basic": {
