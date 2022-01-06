@@ -2,7 +2,7 @@
   "chainId": 137,
   "chainName": "Polygon Mainnet",
   "nativeToken": "MATIC",
-  "rpcUrl": "https://rpc-mainnet.maticvigil.com",
+  "rpcUrl": "https://polygon-rpc.com",
   "infuraUrl": "https://polygon-mainnet.infura.io/v3/%s",
   "blockExplorerUrl": "https://polygonscan.com",
   "blockTime": 2500,
