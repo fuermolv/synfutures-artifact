@@ -57,11 +57,16 @@
       "name": "Chainlink",
       "baseTokens": ["CHAINLINK-BTC"],
       "quoteTokens": ["USDC"]
+    },
+    "SUSHISWAP": {
+      "name": "SushiSwap",
+      "baseTokens": ["WETH"],
+      "quoteTokens": ["USDC", "WETH"]
     }
   },
   "defaultPair": {
-    "oracleType": "CHAINLINK",
-    "base": "CHAINLINK-BTC",
+    "oracleType": "SUSHISWAP",
+    "base": "WETH",
     "quote": "USDC"
   }
 }
