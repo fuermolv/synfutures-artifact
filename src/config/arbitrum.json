@@ -1,7 +1,7 @@
 {
   "chainId": 42161,
   "chainName": "Arbitrum One",
-  "nativeToken": "AETH",
+  "nativeToken": "ETH",
   "rpcUrl": "https://arb1.arbitrum.io/rpc",
   "infuraUrl": "https://arb1.arbitrum.io/rpc",
   "blockExplorerUrl": "https://arbiscan.io",
@@ -25,7 +25,15 @@
             "allowed": true,
             "alignToFriday": true
           },
-          "AETH": {
+          "USDT": {
+            "allowed": true,
+            "alignToFriday": true
+          },
+          "DAI": {
+            "allowed": true,
+            "alignToFriday": true
+          },
+          "ETH": {
             "allowed": true,
             "alignToFriday": true
           }
@@ -60,13 +68,13 @@
     },
     "SUSHISWAP": {
       "name": "SushiSwap",
-      "baseTokens": ["WETH"],
-      "quoteTokens": ["USDC", "WETH"]
+      "baseTokens": ["ETH"],
+      "quoteTokens": ["USDC", "USDT", "DAI", "ETH"]
     }
   },
   "defaultPair": {
     "oracleType": "SUSHISWAP",
-    "base": "WETH",
+    "base": "ETH",
     "quote": "USDC"
   }
 }

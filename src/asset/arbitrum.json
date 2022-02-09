@@ -2,7 +2,7 @@
   {
     "name": "Arbitrum Ether",
     "address": "0x0000000000000000000000000000000000000000",
-    "symbol": "AETH",
+    "symbol": "ETH",
     "decimals": 18,
     "native": true,
     "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/eth.svg"
@@ -34,6 +34,13 @@
     "symbol": "USDC",
     "decimals": 6,
     "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/usdc.svg"
+  },
+  {
+    "name": "Dai Stablecoin",
+    "address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+    "symbol": "DAI",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/dai.svg"
   },
   {
     "name": "(BTC) Bitcoin",
