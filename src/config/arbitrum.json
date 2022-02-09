@@ -28,6 +28,10 @@
           "AETH": {
             "allowed": true,
             "alignToFriday": true
+          },
+          "WETH": {
+            "allowed": true,
+            "alignToFriday": true
           }
         },
         "globalConfig": {
@@ -61,7 +65,7 @@
     "SUSHISWAP": {
       "name": "SushiSwap",
       "baseTokens": ["WETH"],
-      "quoteTokens": ["USDC", "WETH"]
+      "quoteTokens": ["USDC", "WETH", "AETH"]
     }
   },
   "defaultPair": {
