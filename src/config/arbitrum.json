@@ -33,10 +33,6 @@
             "allowed": true,
             "alignToFriday": true
           },
-          "WETH": {
-            "allowed": true,
-            "alignToFriday": true
-          },
           "ETH": {
             "allowed": true,
             "alignToFriday": true
@@ -72,13 +68,13 @@
     },
     "SUSHISWAP": {
       "name": "SushiSwap",
-      "baseTokens": ["WETH"],
-      "quoteTokens": ["USDC", "USDT", "DAI", "WETH", "ETH"]
+      "baseTokens": ["ETH"],
+      "quoteTokens": ["USDC", "USDT", "DAI", "ETH"]
     }
   },
   "defaultPair": {
     "oracleType": "SUSHISWAP",
-    "base": "WETH",
+    "base": "ETH",
     "quote": "USDC"
   }
 }
