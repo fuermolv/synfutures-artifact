@@ -55,5 +55,12 @@
     "symbol": "CHAINLINK-BTC",
     "decimals": 8,
     "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/svg/btc.svg"
+  },
+  {
+    "name": "Frax",
+    "address": "0x45c32fa6df82ead1e2ef74d17b76547eddfaff89",
+    "symbol": "FRAX",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/frax.png"
   }
 ]
