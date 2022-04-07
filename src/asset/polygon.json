@@ -62,5 +62,12 @@
     "symbol": "FRAX",
     "decimals": 18,
     "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/frax.png"
+  },
+  {
+    "name": "Frax Share",
+    "address": "0x1a3acf6D19267E2d3e7f898f42803e90C9219062",
+    "symbol": "FXS",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/SynFutures/icons/main/token/frax.png"
   }
 ]

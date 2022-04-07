@@ -9,6 +9,7 @@ export interface ChainConfig {
   infuraUrl: string;
   blockExplorerUrl: string;
   blockTime: number;
+  subgraph: string;
   subgraphUrl: string;
   subgraphDeploymentId: string;
   backupSubgraphUrl: string;
