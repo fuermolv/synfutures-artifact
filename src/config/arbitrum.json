@@ -75,6 +75,7 @@
   "defaultPair": {
     "oracleType": "SUSHISWAP",
     "base": "ETH",
-    "quote": "USDC"
+    "quote": "USDC",
+    "expiry": "1656057600"
   }
 }

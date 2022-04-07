@@ -66,6 +66,7 @@
   "defaultPair": {
     "oracleType": "PANCAKEV2",
     "base": "BNB",
-    "quote": "BUSD"
+    "quote": "BUSD",
+    "expiry": "1656057600"
   }
 }

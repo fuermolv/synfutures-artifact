@@ -62,6 +62,7 @@ export function mapChainConfig(chainId: CHAIN_ID, jsonConfig): ChainConfig {
     pairConfig: mapPairConfig(chainId, jsonConfig.pairConfig),
     contractAddress: jsonConfig.contractAddress,
     defaultPair: {
+      expiry: jsonConfig.defaultPair.expiry,
       oracleType: ORACLE_TYPE[jsonConfig.defaultPair.oracleType],
       base: getToken(chainId, jsonConfig.defaultPair.base),
       quote: getToken(chainId, jsonConfig.defaultPair.quote),

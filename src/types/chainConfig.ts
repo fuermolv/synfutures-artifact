@@ -77,4 +77,5 @@ export interface DefaultPair {
   oracleType: ORACLE_TYPE;
   base: Token;
   quote: Token;
+  expiry?: string;
 }

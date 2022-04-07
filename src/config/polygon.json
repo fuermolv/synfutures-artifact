@@ -120,6 +120,7 @@
   "defaultPair": {
     "oracleType": "SUSHISWAP",
     "base": "MATIC",
-    "quote": "USDC"
+    "quote": "USDC",
+    "expiry": "1656057600"
   }
 }
