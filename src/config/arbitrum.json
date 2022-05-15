@@ -17,7 +17,7 @@
   },
   "subgraph": "https://api.thegraph.com/subgraphs/name/synfutures/arbitrum-one-v1",
   "subgraphUrl": "https://2l6s9hlfp6.execute-api.ap-east-1.amazonaws.com/thegraph/synfutures/arbitrum-v1",
-  "subgraphDeploymentId": "QmZ7tCHyrHsJd9tVpC2mY8BNb5Sjps77LML8bH74a3EbnL",
+  "subgraphDeploymentId": "QmTjmiRnAZM6JVm86YiPQhDatUGtbNVciocz45GtNfEbKg",
   "chainParams": {
     "globalConfigs": {
       "Basic": {

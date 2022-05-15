@@ -23,9 +23,9 @@
       "observer": "0x5010AE144ad5913771CfCBeaceC7b2ed870240d9"
     }
   },
-  "subgraph": "https://api.thegraph.com/subgraphs/name/synfutures/kovan-v20211101",
+  "subgraph": "https://api.thegraph.com/subgraphs/name/synfutures/kovan-v1",
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/kovan/v_1.1.202111121746",
-  "subgraphDeploymentId": "QmRszMQyBbYuWmir9vfVR1P5VnNxo8fBZ5MwkKMSKaygVQ",
+  "subgraphDeploymentId": "QmVpJoMGVQ3x3KAQp2uwGhTKGrcprah7zo7XLrkjw2V6vj",
   "chainParams": {
     "globalConfigs": {
       "BtcHashRate": {
