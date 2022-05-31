@@ -25,7 +25,7 @@
   },
   "subgraph": "https://api.thegraph.com/subgraphs/name/synfutures/kovan-v1",
   "subgraphUrl": "https://api.studio.thegraph.com/query/4400/kovan/v_1.1.202111121746",
-  "subgraphDeploymentId": "QmVpJoMGVQ3x3KAQp2uwGhTKGrcprah7zo7XLrkjw2V6vj",
+  "subgraphDeploymentId": "QmUhDAtTJSTjoaQqd7agrdpRWVdaZqhqvkReT5eW7bafW1",
   "chainParams": {
     "globalConfigs": {
       "BtcHashRate": {
