@@ -25,7 +25,7 @@
   },
   "subgraph": "https://api.thegraph.com/subgraphs/name/synfutures/polygon-v1",
   "subgraphUrl": "https://2l6s9hlfp6.execute-api.ap-east-1.amazonaws.com/thegraph/synfutures/polygon-v1",
-  "subgraphDeploymentId": "QmSybLbgCVPELyQJR5UyhzzaG4FLywMTJRc4sQDRYhvD2o",
+  "subgraphDeploymentId": "QmZcL6cTHgLWHARXsrC4oCxXGRJnFF39z5BNu36xhngt1k",
   "backupSubgraphUrl": "https://2l6s9hlfp6.execute-api.ap-east-1.amazonaws.com/synfutures/polygon",
   "backupSubgraphDeploymentId": "QmR5yYrc6gJV1wFrmHszB6P3LyUgoBUuCuNEgdeEtCjySd",
   "chainParams": {
